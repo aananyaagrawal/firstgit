@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Happy Birthday, Tushu 💜</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--lav:#fff1c9;--lav2:#ffdf8f;--deep:#8a3b4f;--ink:#4a2a24;--pink:#ffb4a2;--sun:#f4b400;--paper:#fffdf5;--shadow:0 6px 14px rgba(138,59,107,.25)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Fredoka,system-ui,sans-serif;color:var(--ink);background:radial-gradient(circle at 85% 0,#ffd75e,transparent 45%),radial-gradient(circle at 8% 100%,#ffc2d1,transparent 40%),radial-gradient(circle at 15% 0,#fff8e1,var(--lav) 65%) fixed;line-height:1.5}
+h1,h2{font-weight:600;color:var(--deep);margin:.2em 0}
+section{padding:3.5rem 1.2rem;max-width:1100px;margin:auto;text-align:center;position:relative}
+section[hidden]{display:none}
+.in{animation:rise .8s ease both}
+@keyframes rise{from{opacity:0;transform:translateY(24px)}}
+button{font:inherit;cursor:pointer;border:0;border-radius:999px;padding:.7em 1.4em;background:var(--pink);color:var(--ink);font-weight:500;box-shadow:var(--shadow);transition:transform .15s}
+button:hover{transform:translateY(-2px) rotate(-1deg)}
+:focus-visible{outline:3px solid var(--deep);outline-offset:3px}
+.sticker{filter:drop-shadow(2px 0 0 #fff) drop-shadow(-2px 0 0 #fff) drop-shadow(0 2px 0 #fff) drop-shadow(0 -2px 0 #fff) drop-shadow(0 5px 6px rgba(138,59,107,.28))}
+.tape{position:absolute;width:90px;height:26px;background:rgba(246,199,68,.7);top:-12px;left:50%;margin-left:-45px;transform:rotate(-3deg)}
+.paper{background:var(--paper);box-shadow:var(--shadow);position:relative}
+.fx{position:absolute;pointer-events:none}
+.sway{animation:sway 5s ease-in-out infinite;transform-origin:50% 90%}
+@keyframes sway{50%{transform:rotate(7deg)}}
+.sunrow{display:flex;justify-content:center;align-items:center;gap:.6rem;margin:.5rem 0 1rem}
+.sunrow svg:nth-child(odd){width:34px;height:34px}.sunrow svg:nth-child(even){width:22px;height:22px;color:var(--pink)}
+.gif{display:block;margin:1rem auto;width:min(280px,78%);height:auto;border-radius:18px;border:6px solid #fff;box-shadow:var(--shadow);transform:rotate(-2deg);background:var(--lav2)}
+.gif:nth-of-type(even){transform:rotate(2deg)}.gif[hidden]{display:none}
+/* 1 welcome */
+#welcome{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.8rem}
+.main-img{width:min(280px,70vw);aspect-ratio:1;object-fit:cover;border-radius:50% 50% 46% 54%/55% 50% 50% 45%;border:8px solid #fff;box-shadow:var(--shadow);transform:rotate(-3deg);background:var(--lav2)}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:.8rem;width:min(420px,100%);margin-top:.5rem}
+.opts button{padding:1em;background:#fff}
+.opts button.bad{animation:shake .4s;background:#ffe3ee}
+@keyframes shake{25%{transform:translateX(-7px)}75%{transform:translateX(7px)}}
+#hint{min-height:3em;color:var(--deep);font-weight:500}
+.hat{font-size:1.1rem;color:var(--deep)}
+/* 2 party */
+h1.bday{font-family:Caveat,cursive;font-size:clamp(2.4rem,8vw,4.6rem);line-height:1.1}
+.stage{display:flex;flex-wrap:wrap;justify-content:center;align-items:flex-end;gap:2rem;margin-top:1.5rem}
+.bob{animation:bob 2.4s ease-in-out infinite}
+@keyframes bob{50%{transform:translateY(-8px) rotate(2deg)}}
+.popper{animation:wig 1.2s ease-in-out infinite;transform-origin:10% 90%}
+@keyframes wig{50%{transform:rotate(-10deg)}}
+.beat{animation:beat 1.2s ease-in-out infinite}
+@keyframes beat{50%{transform:scale(1.25)}}
+.kiss{display:flex;align-items:flex-end;justify-content:center}
+.kiss svg:first-child{margin-right:-14px;transform:rotate(8deg)}
+.kiss svg:nth-child(2){margin-left:-14px;transform:scaleX(-1) rotate(8deg)}
+/* 3 gallery */
+.rail{display:flex;gap:1.2rem;overflow-x:auto;scroll-snap-type:x mandatory;padding:1.5rem .5rem 1rem;-webkit-overflow-scrolling:touch}
+.card{flex:0 0 82%;scroll-snap-align:center;padding:.8rem .8rem 1rem;transform:rotate(var(--r,-2deg));border:0;text-align:center;border-radius:4px;cursor:zoom-in;background:var(--paper);box-shadow:var(--shadow);color:var(--ink)}
+.card:nth-child(even){--r:2.2deg}.card:hover{transform:rotate(0) scale(1.02)}
+.card img{width:100%;aspect-ratio:4/5;object-fit:cover;display:block;background:var(--lav2)}
+.card span{display:block;margin-top:.6rem;font-family:Caveat,cursive;font-size:1.6rem;line-height:1.1}
+@media(min-width:800px){.rail{display:grid;grid-template-columns:repeat(3,1fr);overflow:visible;gap:2rem 1.6rem;padding:2rem 0}.card{flex:none}.card:nth-child(3n+2){margin-top:1.5rem}}
+.big{font-size:1.2rem;padding:1em 2em;margin-top:2rem;background:var(--deep);color:#fff}
+dialog{border:0;border-radius:18px;padding:1.4rem;max-width:min(560px,94vw);background:var(--paper);color:var(--ink);box-shadow:0 20px 60px rgba(40,20,80,.45)}
+dialog::backdrop{background:rgba(74,36,64,.6)}
+dialog img{max-width:100%;max-height:70vh;display:block;margin:auto}
+.x{position:absolute;top:8px;right:8px;width:44px;height:44px;padding:0;background:#fff}
+/* 4 quiz */
+#qz h2{font-size:1.6rem;margin-top:1rem}
+#qz .opts{grid-template-columns:1fr;margin:1rem auto}
+#qz .opts button{background:var(--lav)}
+#reply{min-height:3em;font-weight:500;color:var(--deep)}
+/* 5 note */
+#note{max-width:1000px}
+#note .paper{padding:clamp(2rem,6vw,4.5rem) clamp(1.4rem,6vw,4rem);min-height:70vh;text-align:left;display:flex;flex-direction:column;justify-content:center;background:linear-gradient(#fffaf6 0,#fffaf6 100%);margin:2rem 0}
+#note h2{font-family:Caveat,cursive;font-size:clamp(2.2rem,6vw,3.4rem);text-align:center;margin-bottom:1rem}
+#text{font-family:Caveat,cursive;font-weight:500;font-size:clamp(1.65rem,3.6vw,2.3rem);line-height:1.5;color:#3a2d5e}
+#text p{margin:0 0 1em}
+#text .w{opacity:0;transition:opacity .5s}#text .w.on{opacity:1}
+.ctrl{display:flex;gap:.6rem;justify-content:center;margin-top:1rem}
+.ctrl button{background:#fff;font-size:.95rem;padding:.5em 1.1em}
+.heart{position:absolute;bottom:-30px;animation:float 9s linear infinite;opacity:0;color:var(--pink);pointer-events:none}
+@keyframes float{10%{opacity:.8}100%{transform:translateY(-110vh) translateX(30px);opacity:0}}
+#note{overflow:hidden}
+/* 6 video */
+video{width:min(640px,100%);border-radius:18px;border:8px solid #fff;box-shadow:var(--shadow);background:#000;margin-top:1rem}
+code{background:#fff;padding:.1em .4em;border-radius:6px}
+/* music + calm */
+#bar{position:fixed;right:12px;bottom:12px;z-index:9;display:flex;gap:.4rem;align-items:center;background:#fff;border-radius:999px;padding:.3rem .5rem .3rem 1rem;box-shadow:var(--shadow);font-size:.85rem}
+#bar button{padding:.4em .8em;background:var(--lav)}
+#bar[hidden]{display:none}
+#calm{position:fixed;left:12px;bottom:12px;z-index:9;font-size:.85rem;padding:.5em 1em;background:#fff}
+#fx{position:fixed;inset:0;pointer-events:none;z-index:20}
+[data-calm] *,[data-calm] *::before{animation:none!important;transition:none!important}
+[data-calm]{scroll-behavior:auto}
+@media(prefers-reduced-motion:reduce){*,*::before{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<!-- ===== Reusable drawings (original, simple, inspired by the cute mood) ===== -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><defs>
+<symbol id="dudu" viewBox="0 0 100 130"><ellipse cx="50" cy="104" rx="26" ry="24" fill="#c99370" stroke="#5b3a2e" stroke-width="3"/><circle cx="20" cy="30" r="12" fill="#b9825e" stroke="#5b3a2e" stroke-width="3"/><circle cx="80" cy="30" r="12" fill="#b9825e" stroke="#5b3a2e" stroke-width="3"/><ellipse cx="50" cy="62" rx="40" ry="34" fill="#c99370" stroke="#5b3a2e" stroke-width="3"/><ellipse cx="50" cy="70" rx="12" ry="8" fill="#f1d2b5"/><circle cx="34" cy="58" r="4" fill="#3b2a22"/><circle cx="66" cy="58" r="4" fill="#3b2a22"/><circle cx="22" cy="70" r="7" fill="#f2a65a" opacity=".75"/><circle cx="78" cy="70" r="7" fill="#f2a65a" opacity=".75"/><path d="M45 69q5 5 10 0" stroke="#3b2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="bubu" viewBox="0 0 100 130"><ellipse cx="50" cy="104" rx="24" ry="24" fill="#fff" stroke="#5b3a2e" stroke-width="3"/><circle cx="20" cy="30" r="12" fill="#3b2a22"/><circle cx="80" cy="30" r="12" fill="#3b2a22"/><ellipse cx="50" cy="62" rx="40" ry="34" fill="#fff" stroke="#5b3a2e" stroke-width="3"/><circle cx="34" cy="58" r="4" fill="#3b2a22"/><circle cx="66" cy="58" r="4" fill="#3b2a22"/><circle cx="22" cy="70" r="8" fill="#f9a8c0" opacity=".85"/><circle cx="78" cy="70" r="8" fill="#f9a8c0" opacity=".85"/><path d="M45 69q5 5 10 0" stroke="#3b2a22" stroke-width="2.5" fill="none" stroke-linecap="round"/></symbol>
+<symbol id="heart" viewBox="0 0 24 24"><path d="M12 21C5 15 2 11.500 2 8a5 5 0 0 1 10-1 5 5 0 0 1 10 1c0 3.500-3 7-10 13z" fill="currentColor"/></symbol>
+<symbol id="star" viewBox="0 0 24 24"><path d="M12 2l3 7 7 .7-5.300 4.800 1.600 7.200L12 17.800 5.700 21.700l1.600-7.200L2 9.700 9 9z" fill="currentColor"/></symbol>
+<symbol id="sun" viewBox="0 0 40 40"><g fill="#f6c744" stroke="#c99a1c" stroke-width=".8"><ellipse cx="20" cy="9" rx="3.800" ry="8"/><ellipse cx="20" cy="9" rx="3.800" ry="8" transform="rotate(45 20 20)"/><ellipse cx="20" cy="9" rx="3.800" ry="8" transform="rotate(90 20 20)"/><ellipse cx="20" cy="9" rx="3.800" ry="8" transform="rotate(135 20 20)"/><ellipse cx="20" cy="9" rx="3.800" ry="8" transform="rotate(180 20 20)"/><ellipse cx="20" cy="9" rx="3.800" ry="8" transform="rotate(225 20 20)"/><ellipse cx="20" cy="9" rx="3.800" ry="8" transform="rotate(270 20 20)"/><ellipse cx="20" cy="9" rx="3.800" ry="8" transform="rotate(315 20 20)"/></g><circle cx="20" cy="20" r="6.500" fill="#7a4a2b"/></symbol>
+<symbol id="gift" viewBox="0 0 60 60"><rect x="6" y="24" width="48" height="32" rx="4" fill="currentColor" stroke="#5b3a2e" stroke-width="2.500"/><rect x="3" y="16" width="54" height="12" rx="4" fill="currentColor" stroke="#5b3a2e" stroke-width="2.500"/><path d="M27 16h6v40h-6z" fill="#fff" opacity=".85"/><path d="M30 16c-8-12-18-4-10 0zM30 16c8-12 18-4 10 0z" fill="none" stroke="#5b3a2e" stroke-width="3"/></symbol>
+</defs></svg>
+
+<canvas id="fx" aria-hidden="true"></canvas>
+<button id="calm" type="button" aria-pressed="false">✨ Calm animations</button>
+<div id="bar" role="group" aria-label="Music controls" hidden><span id="trk"></span><button id="pp" type="button">Pause</button><button id="mu" type="button" aria-pressed="false">Mute</button></div>
+
+<!-- 1 · WELCOME -->
+<section id="welcome" aria-labelledby="q">
+  <svg class="fx sticker sway" width="64" height="64" style="top:5%;left:6%" aria-hidden="true"><use href="#sun"/></svg><svg class="fx sticker sway" width="42" height="42" style="bottom:8%;right:8%" aria-hidden="true"><use href="#sun"/></svg>
+  <svg class="fx beat" width="30" height="30" style="top:12%;right:12%;color:var(--pink)" aria-hidden="true"><use href="#heart"/></svg>
+  <svg class="fx" width="26" height="26" style="bottom:12%;left:12%;color:var(--sun)" aria-hidden="true"><use href="#star"/></svg>
+  <img id="mainImg" class="main-img" alt="">
+  <p class="hat">Hi, my kuchuu puuchuu 💜 Do you remember,</p>
+  <h2 id="q" style="font-size:clamp(1.8rem,6vw,2.8rem)">When did we first meet?</h2>
+  <div class="opts" id="months"></div>
+  <p id="hint" role="status" aria-live="polite"></p>
+  <img class="gif" data-gif="welcome" alt="">
+  </section>
+
+<!-- 2 · CELEBRATION -->
+<section id="party" hidden aria-labelledby="hb">
+  <svg class="fx sticker sway" width="56" height="56" style="top:1.5rem;left:2%" aria-hidden="true"><use href="#sun"/></svg><svg class="fx sticker sway" width="40" height="40" style="top:3rem;right:3%" aria-hidden="true"><use href="#sun"/></svg>
+  <h1 id="hb" class="bday"></h1>
+  <img class="gif" data-gif="party" alt="">
+  <div class="stage">
+    <div>
+      <div style="display:flex;align-items:flex-end;justify-content:center">
+        <svg class="sticker bob" width="130" height="169" aria-label="Bubu"><use href="#bubu"/></svg>
+        <svg id="popper" class="sticker popper" width="80" height="90" viewBox="0 0 80 90" style="margin-left:-20px" aria-hidden="true"><path d="M8 84L30 30l30 30z" fill="#f6c744" stroke="#5b3a2e" stroke-width="3" stroke-linejoin="round"/><path d="M16 66l22-8M22 50l18 4" stroke="#f08fb0" stroke-width="4"/><path d="M40 28q8-18 22-14M46 36q16-6 26 6M36 24q-6-14 4-20" stroke="#b79be6" stroke-width="3" fill="none" stroke-linecap="round"/></svg>
+      </div>
+      <button id="pop" type="button">🎉 Pop it!</button>
+    </div>
+    <div>
+      <div class="kiss" aria-label="Dudu and Bubu kissing among gifts">
+        <svg class="sticker" width="120" height="156" aria-hidden="true"><use href="#dudu"/></svg>
+        <svg class="sticker" width="120" height="156" aria-hidden="true"><use href="#bubu"/></svg>
+      </div>
+      <div style="display:flex;justify-content:center;gap:.4rem;margin-top:-.4rem" aria-hidden="true">
+        <svg class="sticker" width="64" height="64" style="color:#b79be6"><use href="#gift"/></svg>
+        <svg class="sticker beat" width="40" height="40" style="color:#f4709a;margin-top:-34px"><use href="#heart"/></svg>
+        <svg class="sticker" width="54" height="54" style="color:#f6c744"><use href="#gift"/></svg>
+        <svg class="sticker" width="64" height="64" style="color:#f6a8c4"><use href="#gift"/></svg>
+      </div>
+    </div>
+  </div>
+<img class="gif" data-gif="party2" alt="">
+</section>
+
+<!-- 3 · GALLERY -->
+<section id="gallery" hidden aria-labelledby="gh">
+  <div class="sunrow" aria-hidden="true"><svg><use href="#sun"/></svg><svg><use href="#heart"/></svg><svg><use href="#sun"/></svg><svg><use href="#heart"/></svg><svg><use href="#sun"/></svg></div>
+  <h2 id="gh" style="font-size:clamp(1.8rem,5vw,2.6rem)">Our moments</h2>
+  <p>Tap a photo to see it bigger. <span class="hat">(swipe →)</span></p>
+  <img class="gif" data-gif="gallery" alt="">
+  <div class="rail" id="rail"></div>
+  <img class="gif" data-gif="gallery2" alt="">
+  <button class="big" id="openQ" type="button">💌 Open your special surprise</button>
+</section>
+
+<dialog id="lb" aria-label="Photo viewer"><button class="x" id="lbx" type="button" aria-label="Close photo">✕</button><img id="lbi" alt=""><p id="lbc" style="font-family:Caveat,cursive;font-size:1.8rem;margin:.5rem 0 0;text-align:center"></p></dialog>
+
+<!-- 4 · QUIZ -->
+<dialog id="qz" aria-labelledby="qh">
+  <button class="x" id="qzx" type="button" aria-label="Close quiz">✕</button>
+  <div style="text-align:center">
+    <svg class="sticker" width="70" height="91" aria-hidden="true"><use href="#bubu"/></svg>
+    <svg class="fx sticker sway" width="44" height="44" style="top:14px;left:14px" aria-hidden="true"><use href="#sun"/></svg>
+    <p id="step" class="hat"></p>
+    <h2 id="qh"></h2>
+    <div class="opts" id="qopts"></div>
+    <p id="reply" role="status" aria-live="polite"></p>
+    <button id="toNote" type="button" hidden>Read my note 💜</button>
+  </div>
+</dialog>
+
+<!-- 5 · NOTE -->
+<section id="note" hidden aria-labelledby="nh">
+  <svg class="fx sticker" width="60" height="60" style="top:1rem;left:3%" aria-hidden="true"><use href="#sun"/></svg>
+  <svg class="fx sticker" width="38" height="38" style="top:34%;right:2%" aria-hidden="true"><use href="#sun"/></svg>
+  <img class="gif" data-gif="note" alt="">
+  <div class="paper" id="paper">
+    <span class="tape" aria-hidden="true"></span>
+    <h2 id="nh">For you, Tushu</h2>
+    <div id="text" aria-live="off"></div>
+    <svg class="sticker fx" width="80" height="104" style="right:-6px;bottom:-30px;transform:rotate(8deg)" aria-hidden="true"><use href="#dudu"/></svg>
+    <svg class="sticker fx" width="80" height="104" style="left:-6px;bottom:-30px;transform:rotate(-8deg)" aria-hidden="true"><use href="#bubu"/></svg>
+  </div>
+  <div class="ctrl"><button id="skip" type="button">Show it all</button><button id="replay" type="button">Replay ✍️</button></div>
+  <img class="gif" data-gif="note2" alt="">
+</section>
+
+<!-- 6 · VIDEO -->
+<section id="video" hidden aria-labelledby="vh">
+  <h2 id="vh">One more thing…</h2>
+  <video id="vid" autoplay loop muted playsinline controls preload="metadata" aria-label="A personal video for you"></video>
+  <p id="vidmsg" style="font-size:.9rem"></p>
+  <img class="gif" data-gif="video" alt="">
+  <div class="sunrow" aria-hidden="true"><svg><use href="#sun"/></svg><svg><use href="#heart"/></svg><svg><use href="#sun"/></svg><svg><use href="#heart"/></svg><svg><use href="#sun"/></svg></div>
+</section>
+
+<script>
+/* =====================================================================
+   ✏️  EDIT EVERYTHING HERE  — files go in the "assets" folder
+   ===================================================================== */
+const CONFIG = {
+  mainImage: "assets/home.jpg",               // welcome photo (any size, square looks best)
+  mainImageAlt: "Us together",
+  music: {
+    welcome: { src: "assets/song1.mp3", title: "🎵 Welcome song" },   // plays on the first screen only
+    party:   { src: "assets/song2.m4a",   title: "🎵 Birthday song" },   // plays on the Happy Birthday page
+    quiz:    { src: "assets/song3.m4a",    title: "🎵 Surprise song" },   // starts when the quiz opens
+    note:    { src: "assets/song4.mp3",    title: "🎵 Love note song" }   // plays during the note + video
+  },
+  video: { src: "assets/anutu.mp4", poster: "assets/video-poster.jpg" },     // personal video
+  question: "When did we first meet?",
+  months: ["January", "February", "March", "April"],  // change the 3 wrong ones freely
+  correct: "February",
+  hints: [
+    "Hmm, close your eyes and think of our very first hello… try again, cutie 💜",
+    "Not that one! It was a little chilly and my heart was warm 🥰",
+    "Almost, silly! Think hearts, think love month… 💘"
+  ],
+  birthdayMessage: "Happy birthday, myyyy love, Tusharrrrr!",
+  gallery: [   // add / remove / reorder freely
+    { src: "assets/hello.jpg", alt: "Us on our first date",  caption: "Our first hello" },
+    { src: "assets/laugh.jpg", alt: "Us laughing together",  caption: "Laughing at nothing" },
+    { src: "assets/trip.jpg", alt: "A favourite trip",      caption: "My favourite trip" },
+    { src: "assets/cosy.jpg", alt: "A cosy day at home",    caption: "Cosy days" },
+    { src: "assets/silly.jpg", alt: "A silly selfie",        caption: "Silly us" },
+    { src: "assets/forever.jpg", alt: "A sweet moment",        caption: "Forever, please" }
+  ],
+  quiz: [  // ok:true = moves on. ok:false = playful reply, he tries again.
+    { q: "Do you love me?", a: [
+      { t: "Yes, so much! 💜", ok: true,  r: "Correct! I knew it 🥰" },
+      { t: "No", ok: false, r: "How dare you press no? Try again, cutie! 😤💜" } ] },
+    { q: "Who is the cutest in this relationship?", a: [
+      { t: "Me, obviously 😎", ok: true, r: "Confidence! Annoyingly accurate." },
+      { t: "You, my love", ok: true, r: "Smooth… I'm blushing 🥰" },
+      { t: "The cat next door", ok: false, r: "Excuse me?! Try again, cutie 😌" } ] },
+    { q: "How many hugs do I get today?", a: [
+      { t: "Just one", ok: false, r: "One?! Cute. Wrong. Try again 🤗" },
+      { t: "Infinite hugs", ok: true, r: "That's the answer. Come here 🫂" } ] },
+    { q: "Will you be my Dudu forever?", a: [
+      { t: "Always, Bubu 💜", ok: true, r: "Forever it is! 🌻" },
+      { t: "Let me think…", ok: false, r: "Thinking is not allowed, cutie. Try again 😚" } ] }
+  ],
+  quizDone: "You passed with flying colours! 🎉 You're officially the best boyfriend in the whole world. I have one more thing for you…",
+  noteTitle: "For you, Tushu",
+  note:` first the day we met maine to usi din aapko psnd kr liya tha itna khush thi n m aapse mil kr uss din or phir aapko yaad tha mujhe kya khana apne haath se bhi khilaya mere bin bole meri photos li omg 😚aakdam fan hi hogyi thi lakin phir doubt bhi tha aap psnd krte ya nhi lakin abb aapko pata hi h mujhe toh sbr hi nhi hua aapke peeche hi pad gyi😅 phir humari late night walks and rides ohooooooooo aisa lg raha tha spna toh nhi h matlab aapke saath aak film jaise lgta h mujhe phir mera birthday mujhe bura laga aap the nhi yaha but phir aap apni psnd ka earrings lekr aaye phir humari long drives aap jo mujhe tease krte andar hi andar khush hoti rehti hun 😂our first kiss rock ke peeche chup krr🤭 phir paheli baar bargi dam barish m mujhe kitna pyara baby jaisa treat kiya jo m kabhi nhi bhool skti aapka hug m roo ri phir aapka baat baat pr muu fula lena 😂 mera manana aapka non chalant behave krna sb kuch itna interesting h ki kavhi life aapke saath boring ho hi nhi skti manti hun m kabhi kabhi aapke liye boring ho jati hongi but trust me i love u more than anything i i just cant say no to u and u just say no to me funny n but isi sb wajah se hum saath h or m chachungi ki hum kabhi bhi aak dusre pr giveup na kare puri zindgi saath m bitaye aap humesha khussh humesha m sirf aapko haste hue dekhna chahti hu akhir itni killing smile h aapkiiiiiii 😘😘😘 m aapke saath bura waqt dekhne ki bhi shamta rakhti isiliye sirf aapko choose krna chati hun humesha or humesha loveee u sooooo soooo much tuhsar pura padhna bht pyaar se likha or mujhe chhodne ka kabhi mat sochna 🫶🏻hope we will always find light in each other only at last happy happy birthday  muahhhhhhhhhh💋 love uuuuuuu👩‍❤️‍👨`,
+  gifs: {   // 💗 GIF spots. Put files in assets/gifs/. Set src:"" to hide a spot.
+    welcome:  { src: "assets/gif1.gif",  alt: "A cute love gif" },        // welcome screen
+    party:    { src: "assets/bubu-cake.gif",    alt: "A birthday party gif" },    // under the birthday message
+    party2:   { src: "assets/cake.gif",   alt: "Another birthday gif" },    // bottom of birthday page
+    gallery:  { src: "assets/images.jpg",  alt: "A cute couple gif" },       // top of gallery
+    gallery2: { src: "assets/bubu-happy.gif", alt: "A hug gif" },               // above the surprise button
+    note:     { src: "assets/bubu-dudu.gif",     alt: "A heart gif" },             // above the love note
+    note2:    { src: "assets/love.gif",    alt: "A kiss gif" },              // below the love note
+    video:    { src: "assets/dance.gif",    alt: "A love gif" }               // below the video
+  },
+  wordDelayMs: 170   // speed of the writing animation
+};
+/* ================= end of editable area ================= */
+
+const $=s=>document.querySelector(s), calmBtn=$("#calm");
+let calm=matchMedia("(prefers-reduced-motion: reduce)").matches;
+const setCalm=v=>{calm=v;document.documentElement.toggleAttribute("data-calm",v);calmBtn.setAttribute("aria-pressed",v)};
+setCalm(calm); calmBtn.onclick=()=>setCalm(!calm);
+
+const ph=(t,n)=>"data:image/svg+xml,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 500'><rect width='400' height='500' fill='#d6c8f0'/><text x='200' y='240' font-size='70' text-anchor='middle'>💜</text><text x='200' y='310' font-size='24' text-anchor='middle' fill='#4a3a78' font-family='sans-serif'>${t} ${n||""}</text></svg>`);
+const img=(el,src,t,n)=>{el.onerror=()=>{el.onerror=null;el.src=ph(t,n)};el.src=src};
+
+const gph=k=>"data:image/svg+xml,"+encodeURIComponent(`<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 220'><rect width='300' height='220' fill='#ffe9a8'/><rect x='10' y='10' width='280' height='200' rx='14' fill='none' stroke='#8a3b4f' stroke-width='3' stroke-dasharray='8 8'/><text x='150' y='105' font-size='44' text-anchor='middle'>💗</text><text x='150' y='145' font-size='17' text-anchor='middle' fill='#8a3b4f' font-family='sans-serif'>Your GIF here (${k})</text></svg>`);
+document.querySelectorAll("[data-gif]").forEach(el=>{const c=CONFIG.gifs[el.dataset.gif];if(!c||!c.src){el.hidden=true;return}el.alt=c.alt||"";el.onerror=()=>{el.onerror=null;el.src=gph(el.dataset.gif)};el.src=c.src});
+/* tear the edges of "paper cutouts" */
+function tear(el){const p=[];const j=()=>Math.random()*1.6;
+ for(let i=0;i<=20;i++)p.push(`${i*5}% ${j()}%`);for(let i=1;i<=14;i++)p.push(`${100-j()}% ${i*7}%`);
+ for(let i=20;i>=0;i--)p.push(`${i*5}% ${100-j()}%`);for(let i=13;i>=1;i--)p.push(`${j()}% ${i*7}%`);
+ el.style.clipPath=`polygon(${p.join(",")})`}
+tear($("#paper"));
+
+/* ---------- confetti ---------- */
+const cv=$("#fx"),cx=cv.getContext("2d");let bits=[],raf;
+const size=()=>{cv.width=innerWidth;cv.height=innerHeight};size();addEventListener("resize",size);
+function burst(x,y,n=90){if(calm)return;const c=["#b79be6","#f6b3cb","#f6c744","#fff","#d6c8f0"];
+ for(let i=0;i<n;i++){const a=Math.random()*Math.PI*2,s=3+Math.random()*7;bits.push({x,y,vx:Math.cos(a)*s,vy:Math.sin(a)*s-5,r:3+Math.random()*4,c:c[i%5],l:90+Math.random()*50,rot:Math.random()*6})}
+ if(!raf)raf=requestAnimationFrame(tick)}
+function tick(){cx.clearRect(0,0,cv.width,cv.height);bits=bits.filter(b=>b.l-->0);
+ bits.forEach(b=>{b.x+=b.vx;b.y+=b.vy;b.vy+=.22;b.vx*=.99;b.rot+=.15;cx.save();cx.translate(b.x,b.y);cx.rotate(b.rot);cx.fillStyle=b.c;cx.globalAlpha=Math.min(1,b.l/30);cx.fillRect(-b.r,-b.r/2,b.r*2,b.r);cx.restore()});
+ raf=bits.length?requestAnimationFrame(tick):null}
+
+/* ---------- music ---------- */
+const tracks=Object.fromEntries(Object.keys(CONFIG.music).map(k=>[k,new Audio(CONFIG.music[k].src)]));
+Object.values(tracks).forEach(a=>{a.loop=true;a.preload="none"});
+let cur=null;
+function play(k){stopAll();cur=k;const a=tracks[k];$("#trk").textContent=CONFIG.music[k].title;$("#bar").hidden=false;$("#pp").textContent="Pause";a.muted=$("#mu").getAttribute("aria-pressed")==="true";a.play().catch(()=>{$("#pp").textContent="Play"})}
+function stopAll(){Object.values(tracks).forEach(a=>a.pause());cur=null}
+$("#pp").onclick=()=>{if(!cur)return;const a=tracks[cur];if(a.paused){a.play();$("#pp").textContent="Pause"}else{a.pause();$("#pp").textContent="Play"}};
+$("#mu").onclick=e=>{const m=e.target.getAttribute("aria-pressed")!=="true";e.target.setAttribute("aria-pressed",m);e.target.textContent=m?"Unmute":"Mute";Object.values(tracks).forEach(a=>a.muted=m)};
+addEventListener("pointerdown",()=>{if(!cur&&!$("#welcome").hidden&&$("#party").hidden)play("welcome")},{once:true});
+
+/* ---------- reveal ---------- */
+function show(id){const s=$(id);s.hidden=false;s.classList.add("in");setTimeout(()=>s.scrollIntoView({behavior:calm?"auto":"smooth",block:"start"}),50)}
+
+/* ---------- 1 welcome ---------- */
+img($("#mainImg"),CONFIG.mainImage,"Your photo here");$("#mainImg").alt=CONFIG.mainImageAlt;
+$("#q").textContent=CONFIG.question;
+let tries=0;
+CONFIG.months.forEach(m=>{const b=document.createElement("button");b.type="button";b.textContent=m;
+ b.onclick=()=>{ if(m===CONFIG.correct){
+   play("party");$("#hint").textContent="Yesss! 🥰";
+   show("#party");$("#gallery").hidden=false;$("#gallery").classList.add("in");
+   setTimeout(()=>burst(innerWidth/2,innerHeight/3,160),600);
+  } else {b.classList.remove("bad");void b.offsetWidth;b.classList.add("bad");
+   $("#hint").textContent=CONFIG.hints[tries++%CONFIG.hints.length]}};
+ $("#months").append(b)});
+
+/* ---------- 2 party ---------- */
+$("#hb").textContent=CONFIG.birthdayMessage;
+$("#pop").onclick=()=>{const r=$("#popper").getBoundingClientRect();burst(r.left+r.width/2,r.top,110)};
+
+/* ---------- 3 gallery ---------- */
+const lb=$("#lb");
+CONFIG.gallery.forEach((g,i)=>{const c=document.createElement("button");c.type="button";c.className="card";
+ c.setAttribute("aria-label","View larger: "+g.caption);
+ c.innerHTML='<img loading="lazy"><span></span>';const im=c.querySelector("img");img(im,g.src,"Photo",i+1);im.alt=g.alt;c.querySelector("span").textContent=g.caption;
+ c.onclick=()=>{const o=$("#lbi");img(o,g.src,"Photo",i+1);o.alt=g.alt;$("#lbc").textContent=g.caption;lb.showModal()};$("#rail").append(c)});
+$("#lbx").onclick=()=>lb.close();
+lb.addEventListener("click",e=>{if(e.target===lb)lb.close()});
+
+/* ---------- 4 quiz ---------- */
+const qz=$("#qz");let qi=0;
+function ask(){const s=CONFIG.quiz[qi];$("#step").textContent=`Question ${qi+1} of ${CONFIG.quiz.length}`;$("#qh").textContent=s.q;$("#reply").textContent="";$("#qopts").innerHTML="";
+ s.a.forEach(o=>{const b=document.createElement("button");b.type="button";b.textContent=o.t;
+  b.onclick=()=>{$("#reply").textContent=o.r;if(!o.ok){b.classList.add("bad");return}
+   [...$("#qopts").children].forEach(x=>x.disabled=true);burst(innerWidth/2,innerHeight/2,40);
+   setTimeout(()=>{qi++;qi<CONFIG.quiz.length?ask():done()},1300)};
+  $("#qopts").append(b)});$("#qopts").firstChild.focus()}
+function done(){$("#step").textContent="";$("#qh").textContent="🎉 Congratulations!";$("#qopts").innerHTML="";$("#reply").textContent=CONFIG.quizDone;$("#toNote").hidden=false;burst(innerWidth/2,innerHeight/2,150)}
+$("#openQ").onclick=()=>{qi=0;$("#toNote").hidden=true;qz.showModal();ask();play("quiz")};
+$("#qzx").onclick=()=>qz.close();
+$("#toNote").onclick=()=>{qz.close();$("#note").hidden=false;$("#video").hidden=false;$("#note").classList.add("in");
+ setTimeout(()=>$("#note").scrollIntoView({behavior:calm?"auto":"smooth"}),50);play("note");write();floatHearts();loadVideo()};
+
+/* ---------- 5 note (words appear one by one) ---------- */
+let timer;const T=$("#text");
+$("#nh").textContent=CONFIG.noteTitle;
+function write(){clearInterval(timer);T.innerHTML="";const words=[];
+ CONFIG.note.trim().split(/\n\s*\n/).forEach(par=>{const p=document.createElement("p");
+  par.trim().split(/\s+/).forEach((w,i,a)=>{const s=document.createElement("span");s.className="w";s.textContent=w+(i<a.length-1?" ":"");p.append(s);words.push(s)});T.append(p)});
+ let i=0;if(calm){words.forEach(w=>w.classList.add("on"));return}
+ timer=setInterval(()=>{words[i]?.classList.add("on");if(++i>=words.length)clearInterval(timer)},CONFIG.wordDelayMs)}
+$("#skip").onclick=()=>{clearInterval(timer);T.querySelectorAll(".w").forEach(w=>w.classList.add("on"))};
+$("#replay").onclick=write;
+function floatHearts(){if($("#note .heart"))return;for(let i=0;i<10;i++){const h=document.createElement("span");h.className="heart";h.textContent=i%2?"💗":"🌻";h.setAttribute("aria-hidden","true");
+ h.style.cssText=`left:${5+i*9.5}%;font-size:${16+(i%4)*6}px;animation-delay:${i*1.3}s`;$("#note").append(h)}}
+
+/* ---------- 6 video ---------- */
+function loadVideo(){const v=$("#vid");v.poster=CONFIG.video.poster;v.src=CONFIG.video.src;v.muted=true;v.play().catch(()=>{});
+ v.onerror=()=>{$("#vidmsg").innerHTML="Add your video at <code>"+CONFIG.video.src+"</code>"}}
+</script>
+</body>
+</html>
